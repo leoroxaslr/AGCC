@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/AGCC/static/css/main.54577310.css",
-    "main.js": "/AGCC/static/js/main.a7c34ed5.js",
+    "main.js": "/AGCC/static/js/main.1946155e.js",
     "static/media/AGCC LOGO ICON STENCIL.png": "/AGCC/static/media/AGCC LOGO ICON STENCIL.429c92d7995deb1775fd.png",
     "static/media/Church Logo.jpg": "/AGCC/static/media/Church Logo.22374a3cc0a0b58a3d36.jpg",
     "index.html": "/AGCC/index.html",
     "main.54577310.css.map": "/AGCC/static/css/main.54577310.css.map",
-    "main.a7c34ed5.js.map": "/AGCC/static/js/main.a7c34ed5.js.map"
+    "main.1946155e.js.map": "/AGCC/static/js/main.1946155e.js.map"
   },
   "entrypoints": [
     "static/css/main.54577310.css",
-    "static/js/main.a7c34ed5.js"
+    "static/js/main.1946155e.js"
   ]
 }
