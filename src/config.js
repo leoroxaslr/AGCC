@@ -47,7 +47,7 @@ export const CHURCH_CONFIG = {
 
   // --- SOCIAL LINKS (leave blank "" to hide) ---
   social: {
-    facebook: "https://facebook.com/yourchurch",
+    facebook: "https://www.facebook.com/AGCCMarikina",
     youtube: "https://youtube.com/@yourchurch",
     instagram: "",
   },

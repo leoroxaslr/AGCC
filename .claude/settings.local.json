@@ -16,7 +16,11 @@
       "Bash(git add src/App.jsx)",
       "Bash(git commit -m \"Switch to HashRouter for GitHub Pages compatibility\")",
       "Bash(git add -A)",
-      "Bash(git commit -m \"Update church info: address, email, name, navbar\")"
+      "Bash(git commit -m \"Update church info: address, email, name, navbar\")",
+      "Bash(git commit -m \"Add Facebook link, favicon, and custom domain agccph.org\")"
+    ],
+    "additionalDirectories": [
+      "/Users/leo/Downloads/church-website/src/{components,pages,assets}/assets"
     ]
   }
 }
