@@ -5,15 +5,15 @@
 
 export const CHURCH_CONFIG = {
   // --- GENERAL ---
-  name: "Assembly of God Community Church Marikina",
+  name: "Assembly of God Community Church",
   tagline: "A Place to Belong. A Faith to Live By.",
   description:
     "We are a welcoming community of believers committed to worship, fellowship, and serving our neighbors in the love of Christ.",
 
   // --- CONTACT ---
-  address: "123 Faith Avenue, Your City, Province",
+  address: "2nd Floor, 17 V. Gomez St. San Roque, Marikina",
   phone: "+63 (0) 912 345 6789",
-  email: "hello@gracechurch.org",
+  email: "hello@agccph.org",
 
   // --- SERVICE SCHEDULE ---
   services: [
