@@ -6,7 +6,8 @@ import Footer from './components/Footer';
 
 import Home    from './pages/Home';
 import About   from './pages/About';
-import Support from './pages/Support';
+import Support  from './pages/Support';
+import Beliefs  from './pages/Beliefs';
 
 // ── ADD NEW PAGES HERE ──────────────────────────────────────
 // import Sermons from './pages/Sermons';
@@ -30,7 +31,8 @@ export default function App() {
         <Routes>
           <Route path="/"        element={<Home />} />
           <Route path="/about"   element={<About />} />
-          <Route path="/support" element={<Support />} />
+          <Route path="/support"  element={<Support />} />
+          <Route path="/beliefs" element={<Beliefs />} />
 
           {/* ── ADD NEW ROUTES HERE ─────────────────────── */}
           {/* <Route path="/sermons" element={<Sermons />} /> */}

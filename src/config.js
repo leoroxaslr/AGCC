@@ -151,6 +151,7 @@ export const CHURCH_CONFIG = {
   navLinks: [
     { label: "Home",        path: "/" },
     { label: "About",       path: "/about" },
+    { label: "Beliefs",     path: "/beliefs" },
     { label: "Support Us",  path: "/support" },
     // { label: "Sermons",  path: "/sermons" },   // ← Uncomment & create src/pages/Sermons.jsx
     // { label: "Events",   path: "/events" },
