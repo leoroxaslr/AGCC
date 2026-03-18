@@ -247,10 +247,10 @@ export default function Support() {
   return (
     <div className="font-body">
       <div className="pt-32 pb-16 text-center"
-        style={{ background: 'linear-gradient(160deg, #1e1008 0%, #4f5d38 100%)' }}>
+        style={{ background: 'linear-gradient(160deg, #0a1e3d 0%, #122f5d 100%)' }}>
         <p className="text-gold-400/70 uppercase tracking-[0.4em] text-xs mb-3 font-semibold">Get Involved</p>
         <h1 className="font-display text-5xl text-cream-50 mb-4">Support Us</h1>
-        <p className="text-cream-200/60 max-w-md mx-auto text-sm">
+        <p className="text-cream-100 max-w-md mx-auto text-sm">
           Give generously. Serve faithfully. Build the Kingdom together.
         </p>
       </div>

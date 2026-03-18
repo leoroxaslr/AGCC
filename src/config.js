@@ -82,7 +82,7 @@ export const CHURCH_CONFIG = {
     headline: "Serve With Us",
     description:
       "The church is built by willing hearts. Whether you're gifted in music, hospitality, teaching, or technology — there's a place for you to serve.",
-    contactEmail: "serve@gracechurch.org", // Volunteer inquiry email
+    contactEmail: "serve@agccph.org", // Volunteer inquiry email
     ministries: [
       {
         name: "Worship & Music",
