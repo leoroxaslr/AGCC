@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.47cf2dd6.css",
-    "main.js": "/static/js/main.2bf11b2b.js",
-    "static/media/AGCC LOGO ICON.png": "/static/media/AGCC LOGO ICON.f33896d88d010040cdeb.png",
+    "main.js": "/static/js/main.5e5b5758.js",
+    "static/media/logo.png": "/static/media/logo.f33896d88d010040cdeb.png",
     "static/media/Church Logo.jpg": "/static/media/Church Logo.22374a3cc0a0b58a3d36.jpg",
     "index.html": "/index.html",
     "main.47cf2dd6.css.map": "/static/css/main.47cf2dd6.css.map",
-    "main.2bf11b2b.js.map": "/static/js/main.2bf11b2b.js.map"
+    "main.5e5b5758.js.map": "/static/js/main.5e5b5758.js.map"
   },
   "entrypoints": [
     "static/css/main.47cf2dd6.css",
-    "static/js/main.2bf11b2b.js"
+    "static/js/main.5e5b5758.js"
   ]
 }
