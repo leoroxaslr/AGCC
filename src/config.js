@@ -21,29 +21,29 @@ export const CHURCH_CONFIG = {
     { day: "Friday", time: "7:30 PM", label: "Friday Prayer Meeting" },
   ],
 
-  // --- FRIDAY PRAYER MEETING PROGRAM ---
-  fridayProgram: [
-    { time: "7:15 – 7:30", label: "Preparation" },
-    { time: "7:30 – 7:45", label: "Praise and Worship" },
-    { time: "7:45 – 7:50", label: "Opening Prayer" },
-    { time: "7:50 – 8:05", label: "Word" },
-    { time: "8:05 – 8:25", label: "Prayer Leads" },
-    { time: "8:25 – 8:30", label: "Closing Prayer" },
-  ],
+  // --- FRIDAY PRAYER MEETING PROGRAM (archived) ---
+  // fridayProgram: [
+  //   { time: "7:15 – 7:30", label: "Preparation" },
+  //   { time: "7:30 – 7:45", label: "Praise and Worship" },
+  //   { time: "7:45 – 7:50", label: "Opening Prayer" },
+  //   { time: "7:50 – 8:05", label: "Word" },
+  //   { time: "8:05 – 8:25", label: "Prayer Leads" },
+  //   { time: "8:25 – 8:30", label: "Closing Prayer" },
+  // ],
 
-  // --- SUNDAY ORDER OF SERVICE ---
-  sundayProgram: [
-    { time: "8:00 – 8:15", label: "Grace Period" },
-    { time: "8:15 – 8:30", label: "Devotion" },
-    { time: "8:30 – 8:55", label: "Welcoming" },
-    { time: "8:55 – 9:00", label: "Countdown" },
-    { time: "9:00 – 9:20", label: "Worship" },
-    { time: "9:20 – 9:25", label: "Announcement & New Comers Welcome" },
-    { time: "9:25 – 9:30", label: "Bible Reading" },
-    { time: "9:30 – 9:35", label: "Opening Prayer" },
-    { time: "9:35 – 10:25", label: "Word" },
-    { time: "10:25 – 10:30", label: "Benediction" },
-  ],
+  // --- SUNDAY ORDER OF SERVICE (archived) ---
+  // sundayProgram: [
+  //   { time: "8:00 – 8:15", label: "Grace Period" },
+  //   { time: "8:15 – 8:30", label: "Devotion" },
+  //   { time: "8:30 – 8:55", label: "Welcoming" },
+  //   { time: "8:55 – 9:00", label: "Countdown" },
+  //   { time: "9:00 – 9:20", label: "Worship" },
+  //   { time: "9:20 – 9:25", label: "Announcement & New Comers Welcome" },
+  //   { time: "9:25 – 9:30", label: "Bible Reading" },
+  //   { time: "9:30 – 9:35", label: "Opening Prayer" },
+  //   { time: "9:35 – 10:25", label: "Word" },
+  //   { time: "10:25 – 10:30", label: "Benediction" },
+  // ],
 
   // --- SOCIAL LINKS (leave blank "" to hide) ---
   social: {

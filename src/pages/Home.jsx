@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CHURCH_CONFIG } from '../config';
 
@@ -12,35 +11,6 @@ function ServiceCard({ service }) {
   );
 }
 
-function ProgramAccordion({ title, subtitle, program, bgClass }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <section className={`${bgClass} py-16`}>
-      <div className="max-w-2xl mx-auto px-6">
-        <button
-          onClick={() => setOpen(!open)}
-          className="w-full text-center group focus:outline-none"
-        >
-          <p className="text-gold-400/80 uppercase tracking-[0.3em] text-xs mb-3 font-semibold">{subtitle}</p>
-          <h2 className="font-display text-3xl text-cream-100 mb-2">{title}</h2>
-          <span className="inline-block text-gold-400/60 text-lg transition-transform duration-300" style={{ transform: open ? 'rotate(180deg)' : 'rotate(0deg)' }}>
-            &#8964;
-          </span>
-        </button>
-        {open && (
-          <div className="mt-6 space-y-0">
-            {program.map((item, i) => (
-              <div key={i} className="flex items-center gap-6 border-b border-gold-500/10 py-4">
-                <span className="text-gold-400 text-xs font-mono w-28 shrink-0">{item.time}</span>
-                <span className="text-cream-100 text-sm">{item.label}</span>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    </section>
-  );
-}
 
 export default function Home() {
   return (
@@ -114,22 +84,6 @@ export default function Home() {
           <p className="text-cream-200/50 mt-8 text-sm">{CHURCH_CONFIG.address}</p>
         </div>
       </section>
-
-      {/* ── ORDER OF SERVICE ── */}
-      <ProgramAccordion
-        subtitle="Sunday Worship Service"
-        title="Order of Service"
-        program={CHURCH_CONFIG.sundayProgram}
-        bgClass="bg-earth-900"
-      />
-
-      {/* ── FRIDAY PRAYER MEETING ── */}
-      <ProgramAccordion
-        subtitle="Friday Prayer Meeting"
-        title="Program"
-        program={CHURCH_CONFIG.fridayProgram}
-        bgClass="bg-earth-800"
-      />
 
       {/* ── WELCOME MESSAGE ── */}
       <section className="bg-cream-50 py-24">
