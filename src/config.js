@@ -141,7 +141,7 @@ export const CHURCH_CONFIG = {
       { title: "Service", description: "We are called to love and serve our neighbors." },
     ],
     story:
-      "Founded in 2005, Assembly of God Community Church began as a small home fellowship of twelve families with a big dream — to build a church that truly felt like home. Over two decades, God has grown that seed into a vibrant community of hundreds of families. We remain anchored in our original calling: to make the grace of God known and felt in every corner of our city.",
+      "Founded on March 15, 2026, Assembly of God Community Church began with nine surrendered hearts and one unshakeable conviction — that God had called them to build a place where broken lives are made whole. Though young in years, this church carries the weight of decades of combined faith, prayer, and service. We remain anchored in our original calling: to lift high the name of Jesus Christ, and to make His grace known and felt in every life that walks through our doors.",
   },
 
   // --- NAV: Add more pages here ---
