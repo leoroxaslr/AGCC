@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { CHURCH_CONFIG } from '../config';
-import icon from '../{components,pages,assets}/assets/AGCC LOGO ICON.png';
+import icon from '../assets/logo.png';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
