@@ -50,6 +50,12 @@ export const CHURCH_CONFIG = {
     facebook: "https://www.facebook.com/AGCCMarikina",
     youtube: "https://youtube.com/@yourchurch",
     instagram: "",
+    // --- FACEBOOK PAGE FEED ---
+    // To enable the live Facebook feed on the News page:
+    // 1. Set facebookPageId to your numeric Facebook Page ID
+    // 2. Set facebookPageUrl to your full Facebook Page URL
+    facebookPageId: "",        // e.g. "123456789012345"
+    facebookPageUrl: "https://www.facebook.com/AGCCMarikina",
   },
 
   // --- SUPPORT / GIVING ---
@@ -152,6 +158,7 @@ export const CHURCH_CONFIG = {
     { label: "Home",        path: "/" },
     { label: "About",       path: "/about" },
     { label: "Beliefs",     path: "/beliefs" },
+    { label: "News",        path: "/news" },
     { label: "Support Us",  path: "/support" },
     // { label: "Sermons",  path: "/sermons" },   // ← Uncomment & create src/pages/Sermons.jsx
     // { label: "Events",   path: "/events" },

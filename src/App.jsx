@@ -8,6 +8,7 @@ import Home    from './pages/Home';
 import About   from './pages/About';
 import Support  from './pages/Support';
 import Beliefs  from './pages/Beliefs';
+import News     from './pages/News';
 
 // ── ADD NEW PAGES HERE ──────────────────────────────────────
 // import Sermons from './pages/Sermons';
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/about"   element={<About />} />
           <Route path="/support"  element={<Support />} />
           <Route path="/beliefs" element={<Beliefs />} />
+          <Route path="/news"    element={<News />} />
 
           {/* ── ADD NEW ROUTES HERE ─────────────────────── */}
           {/* <Route path="/sermons" element={<Sermons />} /> */}
