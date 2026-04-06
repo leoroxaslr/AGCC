@@ -54,7 +54,7 @@ export const CHURCH_CONFIG = {
     // To enable the live Facebook feed on the News page:
     // 1. Set facebookPageId to your numeric Facebook Page ID
     // 2. Set facebookPageUrl to your full Facebook Page URL
-    facebookPageId: "",        // e.g. "123456789012345"
+    facebookPageId: "AGCCMarikina",
     facebookPageUrl: "https://www.facebook.com/AGCCMarikina",
   },
 
