@@ -17,7 +17,7 @@ export const CHURCH_CONFIG = {
 
   // --- SERVICE SCHEDULE ---
   services: [
-    { day: "Sunday", time: "8:00 AM", label: "Sunday Worship Service" },
+    { day: "Sunday", time: "9:00 AM", label: "Sunday Worship Service" },
     { day: "Friday", time: "7:30 PM", label: "Friday Prayer Meeting" },
   ],
 
