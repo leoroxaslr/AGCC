@@ -1,20 +1,25 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { CHURCH_CONFIG } from '../config';
 
 export default function News() {
   const { facebookPageId, facebookPageUrl } = CHURCH_CONFIG.social;
+  const containerRef = useRef(null);
 
-  // Load the Facebook SDK once
+  // Load the Facebook SDK and render at correct width
   useEffect(() => {
     if (!facebookPageId) return;
 
-    // If SDK already loaded, just re-parse
+    const fbDiv = containerRef.current?.querySelector('.fb-page');
+    if (fbDiv && containerRef.current) {
+      const w = Math.min(containerRef.current.offsetWidth, 500);
+      fbDiv.setAttribute('data-width', String(w));
+    }
+
     if (window.FB) {
       window.FB.XFBML.parse();
       return;
     }
 
-    // Inject the SDK script
     const script = document.createElement('script');
     script.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0';
     script.async = true;
@@ -47,7 +52,7 @@ export default function News() {
       </div>
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto px-6 py-20">
+      <div className="max-w-6xl mx-auto px-6 py-20">
 
         {facebookPageId ? (
           <>
@@ -59,19 +64,52 @@ export default function News() {
               </p>
             </div>
 
-            {/* Facebook Page Plugin */}
+            {/* Facebook Page Plugin — centered card on desktop */}
             <div id="fb-root"></div>
-            <div className="w-full overflow-hidden mb-16">
-              <div
-                className="fb-page"
-                data-href={facebookPageUrl}
-                data-tabs="timeline"
-                data-height="900"
-                data-small-header="false"
-                data-adapt-container-width="true"
-                data-hide-cover="false"
-                data-show-facepile="true"
-              ></div>
+            <div className="flex flex-col lg:flex-row gap-10 mb-16 items-start">
+              {/* Feed */}
+              <div ref={containerRef} className="w-full lg:w-auto lg:flex-shrink-0 overflow-hidden">
+                <div
+                  className="fb-page"
+                  data-href={facebookPageUrl}
+                  data-tabs="timeline"
+                  data-height="900"
+                  data-width="500"
+                  data-small-header="false"
+                  data-adapt-container-width="true"
+                  data-hide-cover="false"
+                  data-show-facepile="true"
+                ></div>
+              </div>
+
+              {/* Sidebar — visible on desktop */}
+              <div className="hidden lg:flex flex-col gap-6 flex-1">
+                <div className="bg-earth-800 rounded p-8">
+                  <p className="text-gold-400 uppercase tracking-widest text-xs mb-3 font-semibold">Service Schedule</p>
+                  {CHURCH_CONFIG.services.map((s, i) => (
+                    <div key={i} className="border-b border-gold-500/10 py-3 last:border-0">
+                      <p className="text-cream-50 font-display text-lg">{s.label}</p>
+                      <p className="text-cream-200/60 text-sm">{s.day} · {s.time}</p>
+                    </div>
+                  ))}
+                  <p className="text-cream-200/40 text-xs mt-4">{CHURCH_CONFIG.address}</p>
+                </div>
+
+                <div className="bg-cream-100 border border-gold-500/20 rounded p-8">
+                  <p className="text-gold-600 uppercase tracking-widest text-xs mb-3 font-semibold">Follow Us</p>
+                  <p className="text-earth-700/70 text-sm leading-relaxed mb-4">
+                    Stay connected with AGCC Marikina for announcements, events, and encouragement.
+                  </p>
+                  <a
+                    href={CHURCH_CONFIG.social.facebook}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-block bg-gold-500 hover:bg-gold-400 text-earth-900 font-semibold px-6 py-2.5 rounded-sm tracking-widest uppercase text-xs transition-colors"
+                  >
+                    Follow on Facebook →
+                  </a>
+                </div>
+              </div>
             </div>
           </>
         ) : (
