@@ -5,7 +5,7 @@ function Tab({ label, active, onClick }) {
   return (
     <button
       onClick={onClick}
-      className={`px-8 py-3 text-sm uppercase tracking-widest font-semibold transition-all duration-200 border-b-2 ${
+      className={`px-4 md:px-8 py-3 text-xs md:text-sm uppercase tracking-widest font-semibold transition-all duration-200 border-b-2 ${
         active
           ? 'border-gold-500 text-gold-600'
           : 'border-transparent text-earth-700/50 hover:text-earth-700'
@@ -249,7 +249,7 @@ export default function Support() {
       <div className="pt-32 pb-16 text-center"
         style={{ background: 'linear-gradient(160deg, #0a1e3d 0%, #122f5d 100%)' }}>
         <p className="text-gold-400/70 uppercase tracking-[0.4em] text-xs mb-3 font-semibold">Get Involved</p>
-        <h1 className="font-display text-5xl text-cream-50 mb-4">Support Us</h1>
+        <h1 className="font-display text-4xl md:text-5xl text-cream-50 mb-4">Support Us</h1>
         <p className="text-cream-100 max-w-md mx-auto text-sm">
           Give generously. Serve faithfully. Build the Kingdom together.
         </p>

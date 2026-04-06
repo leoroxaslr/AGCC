@@ -110,8 +110,8 @@ export default function Beliefs() {
         style={{ background: 'linear-gradient(160deg, #0a1e3d 0%, #122f5d 100%)' }}
       >
         <p className="text-gold-400/70 uppercase tracking-[0.4em] text-xs mb-3 font-semibold">What We Believe</p>
-        <h1 className="font-display text-5xl text-cream-50 mb-6">Our Beliefs</h1>
-        <p className="text-cream-100 max-w-2xl mx-auto text-base leading-relaxed">
+        <h1 className="font-display text-4xl md:text-5xl text-cream-50 mb-6">Our Beliefs</h1>
+        <p className="text-cream-100 max-w-2xl mx-auto text-sm md:text-base leading-relaxed px-4">
           As a member church of the Assemblies of God, we hold to the 16 Fundamental Truths —
           a summary of the core doctrines drawn from Scripture that define our faith and practice.
         </p>

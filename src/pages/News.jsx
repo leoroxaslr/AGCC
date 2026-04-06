@@ -39,8 +39,8 @@ export default function News() {
         style={{ background: 'linear-gradient(160deg, #0a1e3d 0%, #122f5d 100%)' }}
       >
         <p className="text-gold-400/70 uppercase tracking-[0.4em] text-xs mb-3 font-semibold">Stay Connected</p>
-        <h1 className="font-display text-5xl text-cream-50 mb-6">News & Updates</h1>
-        <p className="text-cream-100 max-w-2xl mx-auto text-base leading-relaxed">
+        <h1 className="font-display text-4xl md:text-5xl text-cream-50 mb-6">News & Updates</h1>
+        <p className="text-cream-100 max-w-2xl mx-auto text-sm md:text-base leading-relaxed px-4">
           Follow along with what God is doing in our community. Latest announcements,
           events, and updates from AGCC Marikina.
         </p>
@@ -60,14 +60,13 @@ export default function News() {
             </div>
 
             {/* Facebook Page Plugin */}
-            <div className="flex justify-center mb-16">
-              <div id="fb-root"></div>
+            <div id="fb-root"></div>
+            <div className="w-full overflow-hidden mb-16">
               <div
                 className="fb-page"
                 data-href={facebookPageUrl}
                 data-tabs="timeline"
-                data-width="500"
-                data-height="700"
+                data-height="900"
                 data-small-header="false"
                 data-adapt-container-width="true"
                 data-hide-cover="false"

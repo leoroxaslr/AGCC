@@ -70,7 +70,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`md:hidden bg-earth-800/98 overflow-hidden transition-all duration-300 ${
-          menuOpen ? 'max-h-64 py-4' : 'max-h-0'
+          menuOpen ? 'max-h-96 py-4' : 'max-h-0'
         }`}
       >
         {CHURCH_CONFIG.navLinks.map((link) => (

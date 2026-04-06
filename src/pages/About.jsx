@@ -22,8 +22,8 @@ export default function About() {
         style={{ background: 'linear-gradient(160deg, #0a1e3d 0%, #122f5d 100%)' }}
       >
         <p className="text-gold-400/70 uppercase tracking-[0.4em] text-xs mb-3 font-semibold">Who We Are</p>
-        <h1 className="font-display text-5xl text-cream-50 mb-6">About Us</h1>
-        <p className="text-cream-100 max-w-2xl mx-auto text-base leading-relaxed">
+        <h1 className="font-display text-4xl md:text-5xl text-cream-50 mb-6">About Us</h1>
+        <p className="text-cream-100 max-w-2xl mx-auto text-sm md:text-base leading-relaxed px-4">
           Welcome to our community! We are a church rooted in the truth of Scripture, honoring God the Father
           and the divinity of Jesus Christ. We believe that through the power of the Holy Spirit, every life
           can be beautifully transformed.
