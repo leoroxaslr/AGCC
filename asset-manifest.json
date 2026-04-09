@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.86f33e88.css",
-    "main.js": "/static/js/main.b679bba7.js",
+    "main.css": "/static/css/main.eb1c4fae.css",
+    "main.js": "/static/js/main.fc9a4331.js",
     "static/media/logo.png": "/static/media/logo.f33896d88d010040cdeb.png",
     "static/media/Church Logo.jpg": "/static/media/Church Logo.22374a3cc0a0b58a3d36.jpg",
     "index.html": "/index.html",
-    "main.86f33e88.css.map": "/static/css/main.86f33e88.css.map",
-    "main.b679bba7.js.map": "/static/js/main.b679bba7.js.map"
+    "main.eb1c4fae.css.map": "/static/css/main.eb1c4fae.css.map",
+    "main.fc9a4331.js.map": "/static/js/main.fc9a4331.js.map"
   },
   "entrypoints": [
-    "static/css/main.86f33e88.css",
-    "static/js/main.b679bba7.js"
+    "static/css/main.eb1c4fae.css",
+    "static/js/main.fc9a4331.js"
   ]
 }
