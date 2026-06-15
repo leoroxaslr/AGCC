@@ -34,8 +34,7 @@ export default function Footer() {
         <div>
           <p className="text-cream-200/90 uppercase tracking-widest text-xs mb-4 font-semibold">Find Us</p>
           <p className="text-sm mb-1">{CHURCH_CONFIG.address}</p>
-          <p className="text-sm mb-1">{CHURCH_CONFIG.phone}</p>
-          <p className="text-sm mb-4">{CHURCH_CONFIG.email}</p>
+          <a href={`mailto:${CHURCH_CONFIG.email}`} className="text-sm mb-4 hover:text-gold-400 transition-colors block">{CHURCH_CONFIG.email}</a>
 
           {/* Social Links */}
           <div className="flex gap-3">

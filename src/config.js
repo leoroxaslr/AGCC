@@ -13,11 +13,11 @@ export const CHURCH_CONFIG = {
   // --- CONTACT ---
   address: "2nd Floor, 17 V. Gomez St. San Roque, Marikina",
   phone: "+63 (0) 912 345 6789",
-  email: "hello@agccph.org",
+  email: "agcommchr@gmail.com",
 
   // --- SERVICE SCHEDULE ---
   services: [
-    { day: "Sunday", time: "9:00 AM", label: "Sunday Worship Service" },
+    { day: "Sunday", time: "10:00 AM", label: "Sunday Worship Service" },
     { day: "Friday", time: "7:30 PM", label: "Friday Prayer Meeting" },
   ],
 
@@ -65,16 +65,6 @@ export const CHURCH_CONFIG = {
       "Your generous gifts enable us to serve our congregation and community. Every contribution, big or small, makes a difference.",
     methods: [
       {
-        label: "GCash",
-        detail: "0912 345 6789",
-        icon: "📱",
-      },
-      {
-        label: "Bank Transfer",
-        detail: "BDO Savings — Acct No. 1234-5678-90\nAccount Name: Assembly of God Community Church",
-        icon: "🏦",
-      },
-      {
         label: "In-Person",
         detail: "Drop your offering envelope during any Sunday service.",
         icon: "⛪",
@@ -88,7 +78,7 @@ export const CHURCH_CONFIG = {
     headline: "Serve With Us",
     description:
       "The church is built by willing hearts. Whether you're gifted in music, hospitality, teaching, or technology — there's a place for you to serve.",
-    contactEmail: "serve@agccph.org", // Volunteer inquiry email
+    contactEmail: "agcommchr@gmail.com", // Volunteer inquiry email
     ministries: [
       {
         name: "Worship & Music",
@@ -137,9 +127,8 @@ export const CHURCH_CONFIG = {
 
   // --- ABOUT ---
   about: {
-    vision: "To see every person transformed by the grace of God and equipped to make disciples.",
-    mission:
-      "We exist to worship God wholeheartedly, build authentic community, and serve our city and the world with the love of Jesus.",
+    vision: "Belong to Christ • Grow in Faith • Serve the Community",
+    mission: "Follow Jesus • Love the Church • Reach the City",
     values: [
       { title: "Scripture", description: "The Bible is our foundation and guide for all of life." },
       { title: "Grace", description: "Every person is welcome, loved, and valued here." },
@@ -148,6 +137,14 @@ export const CHURCH_CONFIG = {
     ],
     story:
       "Founded on March 15, 2026, Assembly of God Community Church began with nine surrendered hearts and one unshakeable conviction — that God had called them to build a place where broken lives are made whole. Though young in years, this church carries the weight of decades of combined faith, prayer, and service. We remain anchored in our original calling: to lift high the name of Jesus Christ, and to make His grace known and felt in every life that walks through our doors.",
+  },
+
+  // --- MEMBERSHIP FORM ---
+  // After setting up your Google Apps Script web app, paste the URL below.
+  // See: https://developers.google.com/apps-script/guides/web
+  membership: {
+    googleScriptUrl: "https://script.google.com/macros/s/AKfycbybygj-gA8nkHHvEUu2cAV_88_QY9GQgWW1mr6M9RsINZsOLIDbrVWyz212NdOkIAm6Tw/exec",
+    siteUrl: "https://agccph.org", // ← Your deployed site URL (used for QR code)
   },
 
   // --- NAV: Add more pages here ---
@@ -160,6 +157,7 @@ export const CHURCH_CONFIG = {
     { label: "Beliefs",     path: "/beliefs" },
     { label: "News",        path: "/news" },
     { label: "Support Us",  path: "/support" },
+    { label: "Membership",  path: "/membership" },
     // { label: "Sermons",  path: "/sermons" },   // ← Uncomment & create src/pages/Sermons.jsx
     // { label: "Events",   path: "/events" },
     // { label: "Connect",  path: "/connect" },

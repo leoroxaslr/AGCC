@@ -69,15 +69,16 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-earth-800/98 overflow-hidden transition-all duration-300 ${
+        className={`md:hidden overflow-hidden transition-all duration-300 ${
           menuOpen ? 'max-h-96 py-4' : 'max-h-0'
         }`}
+        style={{ background: 'rgba(10, 30, 61, 0.97)', backdropFilter: 'blur(16px)', borderTop: '1px solid rgba(192,152,112,0.12)', boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
       >
         {CHURCH_CONFIG.navLinks.map((link) => (
           <Link
             key={link.path}
             to={link.path}
-            className={`block px-6 py-3 text-sm tracking-widest uppercase transition-colors ${
+            className={`block px-6 py-3.5 text-sm tracking-widest uppercase transition-colors border-b border-white/5 last:border-0 ${
               location.pathname === link.path ? 'text-gold-400' : 'text-cream-100 hover:text-gold-400'
             }`}
           >

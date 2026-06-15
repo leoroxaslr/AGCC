@@ -52,11 +52,11 @@ export default function News() {
       </div>
 
       {/* Content */}
-      <div className="max-w-6xl mx-auto px-6 py-20">
+      <div className="max-w-[500px] mx-auto px-6 py-20">
 
         {facebookPageId ? (
           <>
-            <div className="mb-10">
+            <div className="mb-10 text-center">
               <p className="text-gold-600 uppercase tracking-[0.3em] text-xs mb-2 font-semibold">Latest From Us</p>
               <h2 className="font-display text-3xl text-earth-800 mb-4">Facebook Feed</h2>
               <p className="text-earth-700/70 text-sm">
@@ -64,11 +64,11 @@ export default function News() {
               </p>
             </div>
 
-            {/* Facebook Page Plugin — centered card on desktop */}
+            {/* Facebook Page Plugin */}
             <div id="fb-root"></div>
-            <div className="flex flex-col lg:flex-row gap-10 mb-16 items-start">
-              {/* Feed */}
-              <div ref={containerRef} className="w-full lg:w-auto lg:flex-shrink-0 overflow-hidden">
+            <div className="mb-16">
+              {/* Feed — full width, capped to container */}
+              <div ref={containerRef} className="w-full overflow-hidden">
                 <div
                   className="fb-page"
                   data-href={facebookPageUrl}
@@ -82,34 +82,6 @@ export default function News() {
                 ></div>
               </div>
 
-              {/* Sidebar — visible on desktop */}
-              <div className="hidden lg:flex flex-col gap-6 flex-1">
-                <div className="bg-earth-800 rounded p-8">
-                  <p className="text-gold-400 uppercase tracking-widest text-xs mb-3 font-semibold">Service Schedule</p>
-                  {CHURCH_CONFIG.services.map((s, i) => (
-                    <div key={i} className="border-b border-gold-500/10 py-3 last:border-0">
-                      <p className="text-cream-50 font-display text-lg">{s.label}</p>
-                      <p className="text-cream-200/60 text-sm">{s.day} · {s.time}</p>
-                    </div>
-                  ))}
-                  <p className="text-cream-200/40 text-xs mt-4">{CHURCH_CONFIG.address}</p>
-                </div>
-
-                <div className="bg-cream-100 border border-gold-500/20 rounded p-8">
-                  <p className="text-gold-600 uppercase tracking-widest text-xs mb-3 font-semibold">Follow Us</p>
-                  <p className="text-earth-700/70 text-sm leading-relaxed mb-4">
-                    Stay connected with AGCC Marikina for announcements, events, and encouragement.
-                  </p>
-                  <a
-                    href={CHURCH_CONFIG.social.facebook}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-block bg-gold-500 hover:bg-gold-400 text-earth-900 font-semibold px-6 py-2.5 rounded-sm tracking-widest uppercase text-xs transition-colors"
-                  >
-                    Follow on Facebook →
-                  </a>
-                </div>
-              </div>
             </div>
           </>
         ) : (

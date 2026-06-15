@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CHURCH_CONFIG } from '../config';
+import MembershipForm from '../components/MembershipForm';
 
 function Tab({ label, active, onClick }) {
   return (
@@ -258,10 +259,33 @@ export default function Support() {
       <div className="sticky top-[60px] z-40 bg-cream-50 border-b border-earth-800/10 flex justify-center gap-2">
         <Tab label="🤲 Tithes & Offerings" active={activeTab === 'giving'} onClick={() => setActiveTab('giving')} />
         <Tab label="🙌 Volunteer" active={activeTab === 'volunteer'} onClick={() => setActiveTab('volunteer')} />
+        <Tab label="📋 Membership" active={activeTab === 'membership'} onClick={() => setActiveTab('membership')} />
       </div>
 
       <div className="max-w-5xl mx-auto px-6 py-16">
-        {activeTab === 'giving' ? <GivingSection /> : <VolunteerSection />}
+        {activeTab === 'giving' && <GivingSection />}
+        {activeTab === 'volunteer' && <VolunteerSection />}
+        {activeTab === 'membership' && (
+          <div>
+            <div className="text-center mb-14 max-w-2xl mx-auto">
+              <p className="font-display italic text-2xl text-earth-800 leading-relaxed mb-3">
+                "You are no longer foreigners and strangers, but fellow citizens with God's people
+                and also members of his household."
+              </p>
+              <p className="text-gold-600 text-xs uppercase tracking-widest font-semibold">Ephesians 2:19</p>
+            </div>
+            <div className="mb-10 text-center">
+              <h2 className="font-display text-3xl text-earth-800 mb-3">Become a Member</h2>
+              <p className="text-earth-700/70 max-w-xl mx-auto leading-relaxed">
+                Membership is a commitment to belong, grow, and serve together as part of the
+                {' '}{CHURCH_CONFIG.name} family.
+              </p>
+            </div>
+            <div className="max-w-2xl mx-auto">
+              <MembershipForm />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

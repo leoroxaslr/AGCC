@@ -8,7 +8,8 @@ import Home    from './pages/Home';
 import About   from './pages/About';
 import Support  from './pages/Support';
 import Beliefs  from './pages/Beliefs';
-import News     from './pages/News';
+import News       from './pages/News';
+import Membership from './pages/Membership';
 
 // ── ADD NEW PAGES HERE ──────────────────────────────────────
 // import Sermons from './pages/Sermons';
@@ -28,13 +29,14 @@ export default function App() {
       <ScrollToTop />
       <Navbar />
 
-      <main>
+      <main className="flex-1">
         <Routes>
           <Route path="/"        element={<Home />} />
           <Route path="/about"   element={<About />} />
           <Route path="/support"  element={<Support />} />
           <Route path="/beliefs" element={<Beliefs />} />
-          <Route path="/news"    element={<News />} />
+          <Route path="/news"       element={<News />} />
+          <Route path="/membership" element={<Membership />} />
 
           {/* ── ADD NEW ROUTES HERE ─────────────────────── */}
           {/* <Route path="/sermons" element={<Sermons />} /> */}
