@@ -1,15 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.c3c24385.css",
-    "main.js": "/static/js/main.01362fe2.js",
+    "main.css": "/static/css/main.479952c1.css",
+    "main.js": "/static/js/main.72593695.js",
     "static/media/logo.png": "/static/media/logo.f33896d88d010040cdeb.png",
+    "static/media/fraunces-latin-full-italic.woff2": "/static/media/fraunces-latin-full-italic.8579045a49929fa6344f.woff2",
+    "static/media/fraunces-latin-ext-full-italic.woff2": "/static/media/fraunces-latin-ext-full-italic.e741f5e734e5202b29b1.woff2",
+    "static/media/fraunces-latin-full-normal.woff2": "/static/media/fraunces-latin-full-normal.4e5db5e80eb27f260ed3.woff2",
     "static/media/Church Logo.jpg": "/static/media/Church Logo.22374a3cc0a0b58a3d36.jpg",
+    "static/media/fraunces-latin-ext-full-normal.woff2": "/static/media/fraunces-latin-ext-full-normal.587cc2e45c55dd475854.woff2",
+    "static/media/inter-latin-ext-wght-normal.woff2": "/static/media/inter-latin-ext-wght-normal.8bff79fbfaa8b8167a0b.woff2",
+    "static/media/inter-latin-wght-normal.woff2": "/static/media/inter-latin-wght-normal.4f2981d82860061bca3e.woff2",
+    "static/media/fraunces-vietnamese-full-italic.woff2": "/static/media/fraunces-vietnamese-full-italic.f6e078e327e21be268f5.woff2",
+    "static/media/fraunces-vietnamese-full-normal.woff2": "/static/media/fraunces-vietnamese-full-normal.902ed62e0c1ac09fad15.woff2",
+    "static/media/inter-cyrillic-ext-wght-normal.woff2": "/static/media/inter-cyrillic-ext-wght-normal.b5cdd4765614e027c252.woff2",
+    "static/media/inter-greek-wght-normal.woff2": "/static/media/inter-greek-wght-normal.4f908aee8194b11d9c35.woff2",
+    "static/media/inter-cyrillic-wght-normal.woff2": "/static/media/inter-cyrillic-wght-normal.49594fb515ba00213fc3.woff2",
+    "static/media/inter-greek-ext-wght-normal.woff2": "/static/media/inter-greek-ext-wght-normal.f4df85d151e5ee39bc2b.woff2",
+    "static/media/inter-vietnamese-wght-normal.woff2": "/static/media/inter-vietnamese-wght-normal.ab4bb8dcda024fe6eff2.woff2",
     "index.html": "/index.html",
-    "main.c3c24385.css.map": "/static/css/main.c3c24385.css.map",
-    "main.01362fe2.js.map": "/static/js/main.01362fe2.js.map"
+    "main.479952c1.css.map": "/static/css/main.479952c1.css.map",
+    "main.72593695.js.map": "/static/js/main.72593695.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3c24385.css",
-    "static/js/main.01362fe2.js"
+    "static/css/main.479952c1.css",
+    "static/js/main.72593695.js"
   ]
 }
